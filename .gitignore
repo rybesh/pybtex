@@ -1,3 +1,4 @@
+*.pyc
 .bzr
 .bzrignore
 examples/foo.bib
