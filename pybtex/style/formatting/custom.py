@@ -40,7 +40,7 @@ pages = field('pages', apply_func=dashify)
 date = field('year')
 
 class Style(BaseStyle):
-    name = 'unsrt'
+    name = 'custom'
 
     def format_names(self, role):
         return sentence(capfirst=False) [names(role, sep=', ', sep2 = ' and ', last_sep=', and ')]
