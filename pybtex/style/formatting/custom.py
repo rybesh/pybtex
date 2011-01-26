@@ -161,7 +161,7 @@ class Style(BaseStyle):
         template = toplevel [
              sentence [self.format_names('author')],
              sentence [field('title')],
-             date
+             sentence [date]
         ]
         return template.format_data(e)
              
