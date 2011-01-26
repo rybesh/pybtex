@@ -157,3 +157,12 @@ class Style(BaseStyle):
         ]
         return template.format_data(e)
 
+    def format_misc(self, e):
+        template = toplevel [
+             sentence [self.format_names('author')],
+             sentence [field('title')],
+             date
+        ]
+        return template.format_data(e)
+             
+
