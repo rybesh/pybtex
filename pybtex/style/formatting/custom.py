@@ -96,7 +96,6 @@ class Style(BaseStyle):
     
     def format_chapter_and_pages(self, e):
         return join(sep=', ') [
-            optional [words ['chapter', field('chapter')]],
             field('title', apply_func=dquote),
             words [
                 optional [words ['chapter', field('chapter'), 'of']],
