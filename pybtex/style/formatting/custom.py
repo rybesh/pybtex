@@ -48,9 +48,9 @@ class Style(BaseStyle):
     def format_article(self, e):
         volume_and_pages = first_of [
             join [ optional [ 'vol. ', field('volume'), ', '],
-                   words [ 'no.', field('number')],
+                   optional [ words [ 'no.', field('number') ] ],
                    optional [': ', pages] ],
-            words ['pages', optional [pages]]
+            optional [ words ['pages', pages] ]
         ]
         template = toplevel [
             self.format_names('author'),
